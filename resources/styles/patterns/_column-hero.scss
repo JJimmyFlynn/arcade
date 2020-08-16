@@ -1,0 +1,61 @@
+//-----------------------------------------
+// Layout
+//-----------------------------------------
+.column-hero {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  background-color: $color-blue;
+}
+
+.column-hero__column {
+  display: grid;
+}
+
+.column-hero__column {
+  min-height: 100vh;
+}
+
+.column-hero__column-right,
+.column-hero__column-left {
+  display: grid;
+}
+
+.column-hero__column-left {
+  grid-template: 1fr 1fr / 1fr;
+}
+
+//-----------------------------------------
+// Image Reveal Adjustments
+//-----------------------------------------
+.column-hero__column-right {
+  .image--slide-reveal {
+    &::after {
+      transition-delay: 600ms;
+    }
+    img {
+      transition-delay: 1s;
+    }
+  }
+}
+
+
+//-----------------------------------------
+// Content
+//-----------------------------------------
+.column-hero__content {
+  padding: 5rem;
+  background-color: $color-black;
+  color: white;
+}
+
+.column-hero__eyebrow {
+  margin-bottom: 1rem;
+}
+
+.column-hero__heading {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}

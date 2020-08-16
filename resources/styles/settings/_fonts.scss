@@ -1,0 +1,35 @@
+//-----------------------------------------
+// Typography Settings
+//-----------------------------------------
+@font-face {
+  font-family: 'Mabry';
+  src: url('../../fonts/MabryPro-Regular.woff2') format("woff2");
+  font-weight: 400
+}
+
+@font-face {
+  font-family: 'Mabry';
+  src: url('../../fonts/MabryPro-Bold.woff2') format("woff2");
+  font-weight: 800
+}
+
+$line-height: 1.55;
+$font-size-body: 1.8rem;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$font-family-body: Mabry, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$font-weight-body: $font-weight-normal;
+
+$font-family-heading: Mabry, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$font-weight-heading: $font-weight-bold;
+
+$heading-sizes: (
+  h1: 4rem,
+  h2: 3.2rem,
+  h3: 2.8rem,
+  h4: 2.4rem,
+  h5: 2.2rem,
+  h6: 2rem
+);

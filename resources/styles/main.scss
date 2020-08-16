@@ -1,0 +1,44 @@
+//--------------------------------------------------------------
+// Main Sass file for Arcade Theatres
+// Author: John Flynn
+//
+// Only imports here
+//--------------------------------------------------------------
+
+@import '~swiper/swiper';
+
+//----------Settings
+@import 'settings/fonts';
+@import 'settings/colors';
+@import 'settings/breakpoints';
+@import 'settings/spacing';
+@import 'settings/z-index';
+
+//----------Tools
+@import 'tools/mixins';
+@import 'tools/utilities';
+
+//----------Base Styles
+@import 'base/reset';
+@import 'base/document';
+@import 'base/typography';
+@import 'base/images';
+@import 'base/accessibility';
+
+//----------Objects
+@import 'objects/buttons';
+@import 'objects/eyebrow';
+@import 'objects/images';
+@import 'objects/inputs';
+@import 'objects/menu-lines';
+
+//----------Components
+@import 'components/column-cta';
+@import 'components/marquee';
+
+//----------Patterns
+@import 'patterns/column-callout';
+@import 'patterns/column-hero';
+@import 'patterns/header';
+@import 'patterns/footer';
+@import 'patterns/team-slider';

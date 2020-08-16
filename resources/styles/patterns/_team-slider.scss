@@ -1,0 +1,15 @@
+.team-slider {
+  background-color: $color-black;
+
+  &:hover &__item {
+    opacity: 0.5;
+  }
+}
+
+.team-slider .team-slider__item {
+  transition-timing-function: linear;
+
+  &:hover {
+    opacity: 1;
+  }
+}

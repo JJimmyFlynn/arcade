@@ -1,0 +1,15 @@
+<section class="marquee">
+  <div class="marquee__inner">
+    <div class="marquee__text">
+      {{ copy }} <span aria-hidden="true">·</span>
+    </div>
+    {# /.marquee__text #}
+    {% for i in 0..8 %}
+      <div class="marquee__text" aria-hidden="true">
+        {{ copy }} <span>·</span>
+      </div>
+      {# /.marquee__text #}
+    {% endfor %}
+  </div>
+  {# /.marquee__inner #}
+</section>

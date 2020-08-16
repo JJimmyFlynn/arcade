@@ -1,0 +1,120 @@
+dateModified: 1597543582
+email:
+  fromEmail: jjimmyflynn@gmail.com
+  fromName: 'Arcade Theatres'
+  transportType: craft\mail\transportadapters\Sendmail
+plugins:
+  blitz:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.6.6
+    settings:
+      apiKey: ''
+      cacheControlHeader: 'public, s-maxage=31536000, max-age=0'
+      cacheDuration: null
+      cacheElementQueries: true
+      cacheElements: true
+      cachePurgerType: putyourlightson\blitz\drivers\purgers\DummyPurger
+      cacheStorageSettings:
+        __assoc__:
+          -
+            - folderPath
+            - '@webroot/cache/blitz'
+          -
+            - createGzipFiles
+            - ''
+      cacheStorageType: putyourlightson\blitz\drivers\storage\FileStorage
+      cacheWarmerType: putyourlightson\blitz\drivers\warmers\LocalWarmer
+      cachingEnabled: ''
+      clearCacheAutomatically: '1'
+      customSiteUris:
+        -
+          __assoc__:
+            -
+              - siteId
+              - '1'
+            -
+              - uri
+              - ''
+      debug: false
+      deployerSettings:
+        __assoc__:
+          -
+            - gitRepositories
+            -
+              __assoc__:
+                -
+                  - 4ae0fdd2-3dff-4dca-b73e-347843888a6c
+                  -
+                    __assoc__:
+                      -
+                        - repositoryPath
+                        - /Users/jflynn/code/static.arcade
+                      -
+                        - branch
+                        - ''
+                      -
+                        - remote
+                        - ''
+          -
+            - commitMessage
+            - 'Blitz auto commit'
+          -
+            - username
+            - JJimmyFlynn
+          -
+            - personalAccessToken
+            - f4d62c02dc02cc680f2fdbb49b1d880e074656b5
+          -
+            - name
+            - Blitz
+          -
+            - email
+            - JJimmyFlynn@gmail.com
+          -
+            - commandsBefore
+            - "rm -rf /Users/jflynn/code/static.arcade/media\r\ncp -r /Users/jflynn/code/arcade/web/media /Users/jflynn/code/static.arcade/media;\r\nrm -rf /Users/jflynn/code/static.arcade/dist\r\ncp -r /Users/jflynn/code/arcade/web/dist /Users/jflynn/code/static.arcade/dist;"
+          -
+            - commandsAfter
+            - ''
+      deployerType: putyourlightson\blitz\drivers\deployers\GitDeployer
+      driverJobPriority: 100
+      excludedQueryStringParams:
+        - gclid
+        - fbclid
+      excludedUriPatterns: ''
+      includedUriPatterns:
+        -
+          __assoc__:
+            -
+              - uriPattern
+              - '.*'
+      injectScriptEvent: DOMContentLoaded
+      integrations:
+        - putyourlightson\blitz\drivers\integrations\FeedMeIntegration
+        - putyourlightson\blitz\drivers\integrations\SeomaticIntegration
+      mutexTimeout: 1
+      outputComments: true
+      queryStringCaching: '0'
+      refreshCacheAutomaticallyForGlobals: true
+      refreshCacheJobPriority: 10
+      refreshCacheWhenElementSavedNotLive: false
+      refreshCacheWhenElementSavedUnchanged: false
+      sendPoweredByHeader: true
+      warmCacheAutomatically: '1'
+  twigpack:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: 'Arcade Theatres'
+  schemaVersion: 3.5.12
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

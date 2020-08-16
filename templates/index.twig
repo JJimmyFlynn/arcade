@@ -1,0 +1,75 @@
+{% extends "layouts/base.twig" %}
+
+{% block content %}
+  {% include "_partials/column-hero.twig" %}
+  {% include "_partials/marquee.twig" with {
+    copy: "The show must go on"
+  } %}
+  <section class="column-callout">
+    <div class="column-cta">
+      <a href="#0" class="column-cta__inner">
+        <figure class="image">
+          <img data-src="/media/images/the-loft-sando.jpg" class="u-fit-cover lazyload" alt="" />
+        </figure>
+        <div class="column-cta__content">
+          <h2 class="column-cta__title | js-animate">
+            <span>Eat</span>
+          </h2>
+          <p class="column-cta__copy">
+            <span>Seven Independent Kitchens</span>
+          </p>
+        </div>
+        <!-- /.column-cta__content -->
+      </a>
+    </div>
+    <!-- /.column-cta -->
+    <div class="column-cta">
+      <a href="#0" class="column-cta__inner">
+        <figure class="image">
+          <img data-src="/media/images/arcade-drinks.jpg" class="u-fit-cover lazyload" alt="" />
+        </figure>
+        <div class="column-cta__content">
+          <h2 class="column-cta__title | js-animate">
+            <span>Drink</span>
+          </h2>
+          <p class="column-cta__copy">
+            <span>Three Independent Bars</span>
+          </p>
+        </div>
+        <!-- /.column-cta__content -->
+      </a>
+    </div>
+    <!-- /.column-cta -->
+  </section>
+  {% include "_partials/marquee.twig" with {
+    copy: "Follow us @arcadelondon"
+  } %}
+  <section class="team-slider">
+    <div class="swiper-container">
+      <div class="swiper-wrapper team-slider__inner">
+        <a href="#0" class="team-slider__item">
+          <figure class="image">
+            <img src="/media/images/team-1.jpg" alt="" />
+          </figure>
+        </a>
+        <a href="#0" class="team-slider__item">
+          <figure class="image">
+            <img src="/media/images/team-2.jpg" alt="" />
+          </figure>
+        </a>
+        <a href="#0" class="team-slider__item">
+          <figure class="image">
+            <img src="/media/images/team-3.jpg" alt="" />
+          </figure>
+        </a>
+        <a href="#0" class="team-slider__item">
+          <figure class="image">
+            <img src="/media/images/team-4.jpg" alt="" />
+          </figure>
+        </a>
+      </div>
+      <!-- /.swiper-wrapper -->
+    </div>
+    <!-- /.swiper-container -->
+  </section>
+{% endblock %}

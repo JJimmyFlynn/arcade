@@ -1,0 +1,61 @@
+.site-footer {
+  padding: 4rem 0;
+  background-color: $color-black;
+  color: $color-peach;
+}
+
+.site-footer__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.site-footer__nav {
+  ul {
+    display: flex;
+
+    > * + * {
+      margin-left: 1.5rem;
+    }
+  }
+}
+
+.site-footer__nav-item {
+  font-weight: $font-weight-bold;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+
+  &:hover a {
+    color: white;
+  }
+
+  a {
+    transition-duration: 100ms;
+  }
+}
+
+.site-footer__colophon {
+  text-align: center;
+  font-size: 1.7rem;
+
+  span {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  }
+}
+
+.site-footer__social {
+  justify-self: end;
+}
+
+.site-footer__instagram a {
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-left: 1rem;
+  }
+
+  path {
+    fill: currentColor;
+  }
+}
