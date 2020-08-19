@@ -4,16 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d14f1b76a53f176ef6bdc407f029f592",
+    "content-hash": "50e98299c472fee7f9e34f6fc6b9fd5c",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
             "version": "3.148.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "bd3c122ee16faa2b45a4221523fac0c618ffb432"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/bd3c122ee16faa2b45a4221523fac0c618ffb432",
@@ -505,11 +500,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.5.3",
+            "version": "3.5.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/b43974522c8a29f2e6406e8c7dde999c037df39b",
-                "reference": "b43974522c8a29f2e6406e8c7dde999c037df39b",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/e5fa51e15a5a083e074b0e116a23a1dcb52b80c6",
+                "reference": "e5fa51e15a5a083e074b0e116a23a1dcb52b80c6",
                 "shasum": ""
             },
             "require": {
@@ -589,7 +584,7 @@
                 "docs": "https://craftcms.com/docs/3.x/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2020-08-11T23:21:59+00:00"
+            "time": "2020-08-17T18:33:40+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1705,11 +1700,11 @@
         },
         {
             "name": "laminas/laminas-feed",
-            "version": "2.12.2",
+            "version": "2.12.3",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/8a193ac96ebcb3e16b6ee754ac2a889eefacb654",
-                "reference": "8a193ac96ebcb3e16b6ee754ac2a889eefacb654",
+                "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/3c91415633cb1be6f9d78683d69b7dcbfe6b4012",
+                "reference": "3c91415633cb1be6f9d78683d69b7dcbfe6b4012",
                 "shasum": ""
             },
             "require": {
@@ -1722,16 +1717,6 @@
             },
             "replace": {
                 "zendframework/zend-feed": "^2.12.0"
-            },
-            "require-dev": {
-                "laminas/laminas-cache": "^2.7.2",
-                "laminas/laminas-coding-standard": "~1.0.0",
-                "laminas/laminas-db": "^2.8.2",
-                "laminas/laminas-http": "^2.7",
-                "laminas/laminas-servicemanager": "^2.7.8 || ^3.3",
-                "laminas/laminas-validator": "^2.10.1",
-                "phpunit/phpunit": "^5.7.27 || ^6.5.14 || ^7.5.20",
-                "psr/http-message": "^1.0.1"
             },
             "suggest": {
                 "laminas/laminas-cache": "Laminas\\Cache component, for optionally caching feeds between requests",
@@ -1753,7 +1738,6 @@
                     "Laminas\\Feed\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1763,7 +1747,7 @@
                 "feed",
                 "laminas"
             ],
-            "time": "2020-03-29T12:36:29+00:00"
+            "time": "2020-08-18T13:45:04+00:00"
         },
         {
             "name": "laminas/laminas-stdlib",
@@ -1812,15 +1796,15 @@
         },
         {
             "name": "laminas/laminas-zendframework-bridge",
-            "version": "1.0.4",
+            "version": "1.1.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/fcd87520e4943d968557803919523772475e8ea3",
-                "reference": "fcd87520e4943d968557803919523772475e8ea3",
+                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/4939c81f63a8a4968c108c440275c94955753b19",
+                "reference": "4939c81f63a8a4968c108c440275c94955753b19",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.6 || ^7.0"
+                "php": "^5.6 || ^7.0 || ^8.0"
             },
             "type": "library",
             "extra": {
@@ -1850,7 +1834,7 @@
                 "laminas",
                 "zf"
             ],
-            "time": "2020-05-20T16:45:56+00:00"
+            "time": "2020-08-18T16:34:51+00:00"
         },
         {
             "name": "league/flysystem",
@@ -2365,11 +2349,11 @@
         },
         {
             "name": "nystudio107/craft-twigpack",
-            "version": "1.2.3",
+            "version": "1.2.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/f6b6a929621db6cc0e80fd77eb43317f2c87934d",
-                "reference": "f6b6a929621db6cc0e80fd77eb43317f2c87934d",
+                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/230189d2c8c33cd5ce8ba31bea1f83284e4efec7",
+                "reference": "230189d2c8c33cd5ce8ba31bea1f83284e4efec7",
                 "shasum": ""
             },
             "require": {
@@ -2415,16 +2399,11 @@
                 "docs": "https://nystudio107.com/plugins/twigpack/documentation",
                 "issues": "https://nystudio107.com/plugins/twigpack/support"
             },
-            "time": "2020-06-24T17:16:55+00:00"
+            "time": "2020-08-14T14:02:33+00:00"
         },
         {
             "name": "opis/closure",
             "version": "3.5.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/opis/closure.git",
-                "reference": "e8d34df855b0a0549a300cb8cb4db472556e8aa9"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/opis/closure/zipball/e8d34df855b0a0549a300cb8cb4db472556e8aa9",
@@ -2985,11 +2964,11 @@
         },
         {
             "name": "putyourlightson/craft-blitz",
-            "version": "3.6.6",
+            "version": "3.6.7",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-blitz/zipball/c591742724e837383ff1768039e1461c6e3f9213",
-                "reference": "c591742724e837383ff1768039e1461c6e3f9213",
+                "url": "https://api.github.com/repos/putyourlightson/craft-blitz/zipball/76a67cd545da44e1f74a17192a44293d14f1b496",
+                "reference": "76a67cd545da44e1f74a17192a44293d14f1b496",
                 "shasum": ""
             },
             "require": {
@@ -3012,7 +2991,8 @@
             },
             "autoload": {
                 "psr-4": {
-                    "putyourlightson\\blitz\\": "src/"
+                    "putyourlightson\\blitz\\": "src/",
+                    "putyourlightson\\blitztests\\fixtures\\": "tests/fixtures/"
                 }
             },
             "license": [
@@ -3035,7 +3015,7 @@
                 "source": "https://github.com/putyourlightson/craft-blitz",
                 "issues": "https://github.com/putyourlightson/craft-blitz/issues"
             },
-            "time": "2020-07-27T08:25:21+00:00"
+            "time": "2020-08-17T11:19:50+00:00"
         },
         {
             "name": "putyourlightson/craft-log-to-file",
@@ -3193,18 +3173,15 @@
         },
         {
             "name": "seld/jsonlint",
-            "version": "1.8.0",
+            "version": "1.8.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/ff2aa5420bfbc296cf6a0bc785fa5b35736de7c1",
-                "reference": "ff2aa5420bfbc296cf6a0bc785fa5b35736de7c1",
+                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/3d5eb71705adfa34bd34b993400622932b2f62fd",
+                "reference": "3d5eb71705adfa34bd34b993400622932b2f62fd",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.3 || ^7.0 || ^8.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
             },
             "bin": [
                 "bin/jsonlint"
@@ -3215,7 +3192,6 @@
                     "Seld\\JsonLint\\": "src/Seld/JsonLint/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3233,7 +3209,7 @@
                 "parser",
                 "validator"
             ],
-            "time": "2020-04-30T19:05:18+00:00"
+            "time": "2020-08-13T09:07:59+00:00"
         },
         {
             "name": "seld/phar-utils",
