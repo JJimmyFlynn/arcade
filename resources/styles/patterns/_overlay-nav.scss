@@ -1,3 +1,7 @@
+/*
+/* General / Mobile
+/**********************************************************************/
+
 .overlay-nav {
   position: fixed;
   top: 0;
@@ -5,21 +9,22 @@
   left: 0;
   right: 0;
   display: grid;
-  grid-template: 1fr / 3vw 70rem;
+  grid-template: 1fr 10vh / 1fr;
   background-color: rgba(48, 42, 45, 0.9);
   z-index: 2;
   transition-timing-function: linear;
 }
 
 .overlay-nav__grid-accent {
-  grid-column: 1;
+  grid-area: 2 / 1;
   background-color: $color-black;
-  background-image: linear-gradient(to bottom, rgba(white, 0.2) 1px, transparent 1px);
-  background-size: 6rem 6rem;
+  background-image: linear-gradient(to bottom, rgba(white, 0.2) 1px, transparent 1px),
+                    linear-gradient(to right, rgba(white, 0.2) 1px, transparent 1px);
+  background-size: 3rem 3rem;
 }
 
 .overlay-nav__inner {
-  grid-column: 2;
+  grid-column: 1 / 1;
   position: relative;
   padding-top: 20rem;
   background-color: $color-black;
@@ -31,19 +36,23 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 12rem;
+    width: 9rem;
     background-color: $color-blue-accent;
   }
 }
 
 .overlay-nav__nav {
   counter-reset: mobile-nav;
+
+  ul > * + * {
+    margin-top: 1rem;
+  }
 }
 
 .overlay-nav__nav-item {
   position: relative;
-  padding-left: 16rem;
-  font-size: 5.8rem;
+  padding-left: 11rem;
+  font-size: 3.4rem;
   font-weight: $font-weight-bold;
   line-height: 1;
   text-transform: uppercase;
@@ -124,5 +133,40 @@
     transition-delay: calc(var(--i) * 0.1s);
     transition-timing-function: ease;
     transition-duration: 600ms;
+  }
+}
+
+/*
+/* Large Up
+/**********************************************************************/
+@include breakpoint($large--up) {
+  .overlay-nav {
+    grid-template: 1fr / 3vw 70rem;
+  }
+
+  .overlay-nav__grid-accent {
+    grid-area: 1 / 1;
+    background-color: $color-black;
+    background-image: linear-gradient(to bottom, rgba(white, 0.2) 1px, transparent 1px);
+    background-size: 6rem 6rem;
+  }
+
+  .overlay-nav__inner {
+    grid-area: 1 / 2;
+
+    &::before {
+      width: 12rem;
+    }
+  }
+
+  .overlay-nav__nav {
+    ul > * + * {
+      margin-top: 0;
+    }
+  }
+
+  .overlay-nav__nav-item {
+    padding-left: 16rem;
+    font-size: 5.8rem;
   }
 }

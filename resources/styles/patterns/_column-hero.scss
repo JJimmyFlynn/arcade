@@ -1,10 +1,14 @@
+/*
+/* General / Mobile
+/**********************************************************************/
+
 //-----------------------------------------
 // Layout
 //-----------------------------------------
 .column-hero {
   display: grid;
   min-height: 100vh;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   background-color: $color-blue;
 }
 
@@ -21,10 +25,6 @@
   display: grid;
 }
 
-.column-hero__column-left {
-  grid-template: 1fr 1fr / 1fr;
-}
-
 //-----------------------------------------
 // Image Reveal Adjustments
 //-----------------------------------------
@@ -39,7 +39,6 @@
   }
 }
 
-
 //-----------------------------------------
 // Content
 //-----------------------------------------
@@ -51,11 +50,29 @@
 
 .column-hero__eyebrow {
   margin-bottom: 1rem;
+  font-size: clamp(1.8rem, 3vmin, 2.2rem);
 }
 
 .column-hero__heading {
   margin-bottom: 1rem;
-  font-size: 4rem;
+  font-size: clamp(2.6rem, 4vmin, 4rem);
   text-transform: uppercase;
   letter-spacing: 2.5px;
+}
+
+
+/*
+/* Large Up
+/**********************************************************************/
+@include breakpoint($large--up) {
+  .column-hero {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    background-color: $color-blue;
+  }
+
+  .column-hero__column-left {
+    grid-template: 1fr 1fr / 1fr;
+  }
 }

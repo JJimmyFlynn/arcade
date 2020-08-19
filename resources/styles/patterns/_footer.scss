@@ -1,3 +1,7 @@
+/*
+/* General / Mobile
+/**********************************************************************/
+
 .site-footer {
   padding: 4rem 0;
   background-color: $color-black;
@@ -6,7 +10,9 @@
 
 .site-footer__inner {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template: 1fr 1fr 1fr / 1fr;
+  grid-gap: 1rem;
+  justify-items: center;
 }
 
 .site-footer__nav {
@@ -22,7 +28,7 @@
 .site-footer__nav-item {
   font-weight: $font-weight-bold;
   letter-spacing: 1px;
-  font-size: 1.5rem;
+  font-size: clamp(1.3rem, 2vw, 1.5rem);
   text-transform: uppercase;
 
   &:hover a {
@@ -43,10 +49,6 @@
   }
 }
 
-.site-footer__social {
-  justify-self: end;
-}
-
 .site-footer__instagram a {
   display: flex;
   align-items: center;
@@ -57,5 +59,22 @@
 
   path {
     fill: currentColor;
+  }
+}
+
+
+/*
+/* General / Mobile
+/**********************************************************************/
+@include breakpoint($large--up) {
+  .site-footer__inner {
+    text-align: center;
+    grid-template: 1fr / 1fr 15rem 1fr;
+    justify-items: start;
+    grid-gap: 0;
+  }
+
+  .site-footer__social {
+    justify-self: end;
   }
 }

@@ -45,3 +45,10 @@ li {
     margin-bottom: 0; // Remove extra vertical spacing when nesting lists.
   }
 }
+
+//-----------------------------------------
+// Nav States
+//-----------------------------------------
+[data-nav-state='open'] {
+  overflow: hidden;
+}
