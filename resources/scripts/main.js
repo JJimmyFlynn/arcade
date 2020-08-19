@@ -1,32 +1,18 @@
 import '../styles/main.scss'
 
-import 'lazysizes'
+import './modules/header.js'
+import './modules/images.js'
+import './modules/scroll-animations.js'
 
-const images = [...document.querySelectorAll('.image')]
+const elMenuToggle = document.querySelector('.js-menu-toggle')
 
-images.forEach((image) => {
-  image.addEventListener('lazyloaded', function () {
-    this.classList.add('loaded')
-  })
-})
+elMenuToggle.addEventListener('click', () => {
+  const navState = document.body.dataset.navState
 
-const jsAnimatedObserver = new IntersectionObserver(
-  (entries, observer) => {
-    console.log('Entries:', entries)
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animated')
-      }
-    })
-  },
-  {
-    rootMargin: '0px 0px -20% 0px',
-    threshold: 0
+  if (navState === 'closed') {
+    document.body.dataset.navState = 'open'
+    return
   }
-)
 
-const jsAnimated = document.querySelectorAll('.js-animate')
-
-jsAnimated.forEach((element) => {
-  jsAnimatedObserver.observe(element)
+  document.body.dataset.navState = 'closed'
 })

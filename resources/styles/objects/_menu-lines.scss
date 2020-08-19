@@ -7,12 +7,32 @@
   width: 2.5rem;
   height: 1px;
   background-color: $color-black;
+  transform-origin: left center;
+  transition-timing-function: linear;
+  transition-duration: 200ms;
 
   &:nth-child(1) {
-    transform: translateY(-0.7rem)
+    transform: translateY(-0.7rem);
   }
 
   &:nth-child(3) {
-    transform: translateY(0.7rem)
+    transform: translateY(0.7rem);
+  }
+}
+
+//-----------------------------------------
+// Transitions
+//-----------------------------------------
+[data-nav-state='open'] {
+  .menu-lines__line:nth-child(1) {
+    transform: translateX(0.2rem) translateY(-0.7rem) rotate(40deg);
+  }
+
+  .menu-lines__line:nth-child(2) {
+    transform: scaleX(0);
+  }
+
+  .menu-lines__line:nth-child(3) {
+    transform: translateX(0.2rem) translateY(0.7rem) rotate(-40deg);
   }
 }

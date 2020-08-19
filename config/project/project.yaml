@@ -1,4 +1,4 @@
-dateModified: 1597543582
+dateModified: 1597791505
 email:
   fromEmail: jjimmyflynn@gmail.com
   fromName: 'Arcade Theatres'
@@ -64,7 +64,7 @@ plugins:
             - JJimmyFlynn
           -
             - personalAccessToken
-            - f4d62c02dc02cc680f2fdbb49b1d880e074656b5
+            - $BLITZ_GITHUB_TOKEN
           -
             - name
             - Blitz
