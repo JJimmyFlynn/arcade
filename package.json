@@ -18,14 +18,6 @@
     "url": "https://github.com/JJimmyFlynn/Sukiya/issues"
   },
   "homepage": "https://github.com/JJimmyFlynn/Sukiya#readme",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "resources/styles/**/*.scss": []
-  },
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
@@ -39,7 +31,7 @@
     "css-loader": "^3.2.0",
     "csscomb": "^4.3.0",
     "cssnano": "^4.1.10",
-    "eslint": "^7.6.0",
+    "eslint": "^7.7.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",
@@ -47,11 +39,9 @@
     "eslint-plugin-standard": "^4.0.1",
     "eslint-plugin-vue": "^6.2.2",
     "file-loader": "^5.0.2",
-    "husky": "^4.2.5",
     "ignore-loader": "^0.1.2",
     "image-webpack-loader": "^6.0.0",
     "imagemin-webp-webpack-plugin": "^3.3.1",
-    "lint-staged": "^10.2.11",
     "mini-css-extract-plugin": "^0.8.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
@@ -63,8 +53,7 @@
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "stylelint": "^13.6.1",
-    "stylelint-config-idiomatic-order": "^8.1.0",
-    "stylelint-config-shopify": "^5.0.0",
+    "stylelint-config-recess-order": "^2.1.0",
     "vue-loader": "^15.7.1",
     "vue-template-compiler": "^2.6.11",
     "webpack": "^4.41.2",
@@ -78,7 +67,7 @@
   "dependencies": {
     "core-js": "^3.3.2",
     "lazysizes": "^5.2.2",
-    "swiper": "^6.1.1"
+    "swiper": "^6.1.2"
   },
   "browserslist": {
     "production": [
@@ -105,9 +94,6 @@
     ]
   },
   "stylelint": {
-    "extends": "stylelint-config-idiomatic-order",
-    "rules": {
-      "selector-max-type": 3
-    }
+    "extends": "stylelint-config-recess-order"
   }
 }

@@ -1,6 +1,6 @@
 .marquee {
-  overflow: hidden;
   padding: 4rem;
+  overflow: hidden;
   background-color: white;
   background-image:
           linear-gradient(to right, rgba($color-dark-red, 0.2) 1px, transparent 1px),
@@ -15,12 +15,12 @@
 }
 
 .marquee__text {
-  animation: marquee 8s linear infinite;
   font-size: 1.6rem;
   font-weight: $font-weight-bold;
-  letter-spacing: 1px;
   text-transform: uppercase;
+  letter-spacing: 1px;
   white-space: nowrap;
+  animation: marquee 8s linear infinite;
 
 
   span {

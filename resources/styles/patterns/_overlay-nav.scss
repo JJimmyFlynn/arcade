@@ -4,32 +4,32 @@
 
 .overlay-nav {
   position: fixed;
-  z-index: 2;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 2;
   display: grid;
-  background-color: rgba(48, 42, 45, 0.9);
   grid-template: 1fr 10vh / 1fr;
+  background-color: rgba(48, 42, 45, 0.9);
   transition-timing-function: linear;
 }
 
 .overlay-nav__grid-accent {
   position: relative;
   z-index: 1;
+  grid-area: 2 / 1;
   background-image: linear-gradient(to bottom, rgba(white, 0.2) 1px, transparent 1px),
                     linear-gradient(to right, rgba(white, 0.2) 1px, transparent 1px);
   background-size: 3rem 3rem;
-  grid-area: 2 / 1;
 }
 
 .overlay-nav__inner {
   position: relative;
-  padding-top: 20rem;
-  background-color: $color-black;
-  color: white;
   grid-column: 1 / 1;
+  padding-top: 20rem;
+  color: white;
+  background-color: $color-black;
 
   &::before {
     position: absolute;
@@ -37,8 +37,8 @@
     left: 0;
     width: 100%;
     height: 9rem;
-    background-color: $color-blue-accent;
     content: '';
+    background-color: $color-blue-accent;
   }
 }
 
@@ -65,10 +65,10 @@
     padding-left: 2rem;
     content: "0" counter(mobile-nav);
     counter-increment: mobile-nav;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 2px white;
-    transition-duration: 200ms;
-    transition-timing-function: linear;
   }
 
   &:hover {
@@ -78,8 +78,8 @@
 
     span {
       opacity: 0.5;
-      transition-duration: 200ms;
       transition-timing-function: linear;
+      transition-duration: 200ms;
     }
   }
 
@@ -109,31 +109,31 @@
 //-----------------------------------------
 [data-nav-state='closed'] {
   .overlay-nav {
+    visibility: hidden;
     opacity: 0;
     transition-delay: 0s, 1s;
     transition-property: opacity, visibility;
-    visibility: hidden;
   }
 
   .overlay-nav__nav-item {
     opacity: 0;
-    transform: translateY(-25%);
     transition-delay: 500ms;
+    transform: translateY(-25%);
   }
 }
 
 [data-nav-state='open'] {
   .overlay-nav {
-    opacity: 1;
     visibility: visible;
+    opacity: 1;
   }
 
   .overlay-nav__nav-item {
     opacity: 1;
-    transform: none;
     transition-delay: calc(var(--i) * 0.1s);
-    transition-duration: 600ms;
     transition-timing-function: ease;
+    transition-duration: 600ms;
+    transform: none;
   }
 }
 
@@ -146,10 +146,10 @@
   }
 
   .overlay-nav__grid-accent {
+    grid-area: 1 / 1;
     background-color: $color-black;
     background-image: linear-gradient(to bottom, rgba(white, 0.2) 1px, transparent 1px);
     background-size: 6rem 6rem;
-    grid-area: 1 / 1;
   }
 
   .overlay-nav__inner {
@@ -161,8 +161,8 @@
       left: 0;
       width: 12rem;
       height: 100%;
-      background-color: $color-blue-accent;
       content: '';
+      background-color: $color-blue-accent;
     }
   }
 

@@ -4,14 +4,14 @@
 
 .site-footer {
   padding: $gutter--small 0;
-  background-color: $color-black;
   color: $color-peach;
+  background-color: $color-black;
 }
 
 .site-footer__inner {
   display: grid;
-  grid-gap: 1rem;
   grid-template: 1fr 1fr 1fr / 1fr;
+  grid-gap: 1rem;
   justify-items: center;
 }
 
@@ -28,8 +28,8 @@
 .site-footer__nav-item {
   font-size: clamp(1.3rem, 2vw, 1.5rem);
   font-weight: $font-weight-bold;
-  letter-spacing: 1px;
   text-transform: uppercase;
+  letter-spacing: 1px;
 
   a {
     transition-timing-function: linear;
@@ -67,8 +67,8 @@
 
   path {
     fill: $color-peach;
-    transition-duration: 100ms;
     transition-timing-function: linear;
+    transition-duration: 100ms;
   }
 }
 
@@ -82,8 +82,8 @@
   }
 
   .site-footer__inner {
-    grid-gap: 0;
     grid-template: 1fr / 1fr 15rem 1fr;
+    grid-gap: 0;
     justify-items: start;
     text-align: center;
   }

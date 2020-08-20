@@ -7,9 +7,9 @@
   width: 2.5rem;
   height: 1px;
   background-color: $color-black;
-  transform-origin: left center;
-  transition-duration: 200ms;
   transition-timing-function: linear;
+  transition-duration: 200ms;
+  transform-origin: left center;
 
   &:nth-child(1) {
     transform: translateY(-0.7rem);

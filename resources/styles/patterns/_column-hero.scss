@@ -7,9 +7,9 @@
 //-----------------------------------------
 .column-hero {
   display: grid;
+  grid-template-columns: 1fr;
   min-height: 100vh;
   background-color: $color-blue;
-  grid-template-columns: 1fr;
 }
 
 .column-hero__column {
@@ -44,8 +44,8 @@
 //-----------------------------------------
 .column-hero__content {
   padding: 4rem $gutter--small;
-  background-color: $color-black;
   color: white;
+  background-color: $color-black;
 }
 
 .column-hero__eyebrow {
@@ -56,8 +56,8 @@
 .column-hero__heading {
   margin-bottom: 1rem;
   font-size: clamp(2.6rem, 4vmin, 4rem);
-  letter-spacing: 2.5px;
   text-transform: uppercase;
+  letter-spacing: 2.5px;
 }
 
 
@@ -67,9 +67,9 @@
 @include breakpoint($large--up) {
   .column-hero {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     min-height: 100vh;
     background-color: $color-blue;
-    grid-template-columns: 1fr 1fr;
   }
 
   .column-hero__column-left {
