@@ -4,8 +4,8 @@
 *,
 *::before,
 *::after {
-  transition-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
   transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
 }
 
 //-----------------------------------------
@@ -32,8 +32,8 @@ body {
 //-----------------------------------------
 img {
   max-width: 100%;
-  vertical-align: middle; //Setting `vertical-align` removes the whitespace that appears under `img`
   font-style: italic; //Offset `alt` text from surrounding copy
+  vertical-align: middle; //Setting `vertical-align` removes the whitespace that appears under `img`
 }
 
 //-----------------------------------------

@@ -4,8 +4,8 @@
 
 .column-callout {
   display: grid;
-  grid-template-columns: 1fr;
   min-height: calc(100vh + 10rem);
+  grid-template-columns: 1fr;
 }
 
 /*

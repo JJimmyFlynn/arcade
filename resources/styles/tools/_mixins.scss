@@ -9,14 +9,14 @@
 // Helpers
 //-----------------------------------------
 @mixin strip-list() {
-  list-style: none;
   padding-left: 0;
+  list-style: none;
 }
 
 @mixin strip-button() {
+  border: 0;
   appearance: none;
   background: none;
-  border: 0;
   cursor: pointer;
 }
 
@@ -25,31 +25,31 @@
   // sass-lint:disable no-important
   position: absolute !important;
   overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
   width: 1px;
-  margin: -1px;
+  height: 1px;
   padding: 0;
   border: 0;
+  margin: -1px;
+  clip: rect(0 0 0 0);
 }
 
 @mixin visually-shown($position: inherit) {
   // sass-lint:disable no-important
   position: $position !important;
   overflow: auto;
-  clip: auto;
   width: auto;
   height: auto;
   margin: 0;
+  clip: auto;
 }
 
 @mixin line-height-crop($line-height) {
   &::before {
-    content: '';
     display: block;
-    height: 0;
     width: 0;
+    height: 0;
     margin-top: calc((1 - #{$line-height}) * 0.5em);
+    content: '';
   }
 }
 

@@ -63,6 +63,7 @@
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "stylelint": "^13.6.1",
+    "stylelint-config-idiomatic-order": "^8.1.0",
     "stylelint-config-shopify": "^5.0.0",
     "vue-loader": "^15.7.1",
     "vue-template-compiler": "^2.6.11",
@@ -104,9 +105,8 @@
     ]
   },
   "stylelint": {
-    "extends": "@shopify/stylelint-plugin/prettier",
+    "extends": "stylelint-config-idiomatic-order",
     "rules": {
-      "scss/double-slash-comment-whitespace-inside": false,
       "selector-max-type": 3
     }
   }

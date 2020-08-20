@@ -8,8 +8,8 @@
   height: 1px;
   background-color: $color-black;
   transform-origin: left center;
-  transition-timing-function: linear;
   transition-duration: 200ms;
+  transition-timing-function: linear;
 
   &:nth-child(1) {
     transform: translateY(-0.7rem);
