@@ -1,5 +1,9 @@
+/*
+/* General / Mobile
+/**********************************************************************/
 .team-slider {
   background-color: $color-black;
+  transition: opacity 0.5s linear;
 
   &:hover &__item {
     opacity: 0.5;
@@ -7,9 +11,49 @@
 }
 
 .team-slider .team-slider__item {
-  transition-timing-function: linear;
+  transition: opacity 0.2s linear;
 
   &:hover {
     opacity: 1;
+  }
+}
+
+
+.team-slider__control {
+  @include strip-button;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 100%;
+  transform: translateY(-50%);
+
+  &.swiper-button-disabled {
+    opacity: 0.5;
+    cursor: auto;
+  }
+}
+
+.team-slider__next {
+  right: 2rem;
+}
+
+.team-slider__previous {
+  left: 2rem;
+
+  svg {
+    transform: rotate(180deg);
+  }
+}
+
+/*
+/* Medium Up
+/**********************************************************************/
+@include breakpoint($medium--up) {
+  .team-slider__controls {
+    display: none;
   }
 }

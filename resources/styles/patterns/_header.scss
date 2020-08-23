@@ -34,10 +34,13 @@
   @include strip-button;
   display: grid;
   grid-template: 1fr / 1fr;
+  align-items: center;
+  justify-items: center;
   width: 5rem;
   height: 5rem;
   padding: 0;
   margin-top: 5rem;
+  border-radius: 100%;
   opacity: 0;
   transform: translateY(-25%);
   animation: site-header-item-in 500ms linear both;
@@ -59,8 +62,6 @@
   > * {
     position: relative;
     grid-area: 1 / 1;
-    align-self: center;
-    justify-self: center;
   }
 
   &::before {

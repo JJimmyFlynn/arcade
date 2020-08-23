@@ -44,31 +44,36 @@
   {% include "_partials/marquee.twig" with {
     copy: "Follow us @arcadelondon"
   } %}
-  <section class="team-slider">
+  <section class="team-slider | js-team-slider">
     <div class="swiper-container">
       <div class="swiper-wrapper team-slider__inner">
-        <a href="#0" class="team-slider__item">
+        <a href="#0" class="team-slider__item swiper-slide">
           <figure class="image">
-            <img src="/media/images/team-1.jpg" alt="" />
+            <img src="/media/images/team-1.jpg" class="u-fit-cover" alt="" />
           </figure>
         </a>
-        <a href="#0" class="team-slider__item">
+        <a href="#0" class="team-slider__item swiper-slide">
           <figure class="image">
-            <img src="/media/images/team-2.jpg" alt="" />
+            <img src="/media/images/team-2.jpg" class="u-fit-cover" alt="" />
           </figure>
         </a>
-        <a href="#0" class="team-slider__item">
+        <a href="#0" class="team-slider__item swiper-slide">
           <figure class="image">
-            <img src="/media/images/team-3.jpg" alt="" />
+            <img src="/media/images/team-3.jpg" class="u-fit-cover" alt="" />
           </figure>
         </a>
-        <a href="#0" class="team-slider__item">
+        <a href="#0" class="team-slider__item swiper-slide">
           <figure class="image">
-            <img src="/media/images/team-4.jpg" alt="" />
+            <img src="/media/images/team-4.jpg" class="u-fit-cover" alt="" />
           </figure>
         </a>
       </div>
       <!-- /.swiper-wrapper -->
+      <div class="team-slider__controls">
+        <button class="team-slider__control team-slider__previous">{{ svg("media/svg/arrow.svg") }}</button>
+        <button class="team-slider__control team-slider__next">{{ svg("media/svg/arrow.svg") }}</button>
+      </div>
+      <!-- /.team-slider__controls -->
     </div>
     <!-- /.swiper-container -->
   </section>

@@ -20,11 +20,6 @@
   min-height: 100vh;
 }
 
-.column-hero__column-right,
-.column-hero__column-left {
-  display: grid;
-}
-
 //-----------------------------------------
 // Image Reveal Adjustments
 //-----------------------------------------
@@ -73,7 +68,11 @@
   }
 
   .column-hero__column-left {
-    grid-template: 1fr 1fr / 1fr;
+    grid-template: 50% 50% / 1fr;
+
+    img {
+      position: absolute; // prevent jump
+    }
   }
 
   .column-hero__content {
