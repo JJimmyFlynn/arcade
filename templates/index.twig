@@ -29,10 +29,10 @@
         </figure>
         <div class="column-cta__content">
           <h2 class="column-cta__title | js-animate">
-            <span>Eat</span>
+            <span>{{ entry.homeCalloutHeadingLeft }}</span>
           </h2>
           <p class="column-cta__copy">
-            <span>Seven Independent Kitchens</span>
+            <span>{{ entry.homeCalloutCopyLeft }}</span>
           </p>
         </div>
         <!-- /.column-cta__content -->
@@ -62,10 +62,10 @@
         </figure>
         <div class="column-cta__content">
           <h2 class="column-cta__title | js-animate">
-            <span>Drink</span>
+            <span>{{ entry.homeCalloutHeadingRight }}</span>
           </h2>
           <p class="column-cta__copy">
-            <span>Three Independent Bars</span>
+            <span>{{ entry.homeCalloutCopyRight }}</span>
           </p>
         </div>
         <!-- /.column-cta__content -->
@@ -74,7 +74,7 @@
     <!-- /.column-cta -->
   </section>
   {% include "_partials/marquee.twig" with {
-    copy: "Follow us @arcadelondon"
+    copy: entry.homeBottomMarqueeText
   } %}
   <section class="team-slider | js-team-slider">
     <div class="swiper-container">

@@ -1,4 +1,4 @@
-dateModified: 1598396966
+dateModified: 1598398038
 email:
   fromEmail: jjimmyflynn@gmail.com
   fromName: 'Arcade Theatres'
@@ -25,7 +25,7 @@ plugins:
             - ''
       cacheStorageType: putyourlightson\blitz\drivers\storage\FileStorage
       cacheWarmerType: putyourlightson\blitz\drivers\warmers\LocalWarmer
-      cachingEnabled: ''
+      cachingEnabled: '1'
       clearCacheAutomatically: '1'
       customSiteUris:
         -
@@ -73,7 +73,7 @@ plugins:
             - JJimmyFlynn@gmail.com
           -
             - commandsBefore
-            - "rm -rf /Users/jflynn/code/static.arcade/media\r\ncp -r /Users/jflynn/code/arcade/web/media /Users/jflynn/code/static.arcade/media;\r\nrm -rf /Users/jflynn/code/static.arcade/dist\r\ncp -r /Users/jflynn/code/arcade/web/dist /Users/jflynn/code/static.arcade/dist;"
+            - "rm -rf /Users/jflynn/code/static.arcade/media\r\ncp -r /Users/jflynn/code/arcade/web/media /Users/jflynn/code/static.arcade/media\r\nrm -rf /Users/jflynn/code/static.arcade/dist\r\ncp -r /Users/jflynn/code/arcade/web/dist /Users/jflynn/code/static.arcade/dist\r\nrm -rf /Users/jflynn/code/static.arcade/imager\r\ncp -r /Users/jflynn/code/arcade/web/imager /Users/jflynn/code/static.arcade/imager"
           -
             - commandsAfter
             - ''

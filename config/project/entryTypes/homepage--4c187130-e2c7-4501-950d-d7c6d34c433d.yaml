@@ -7,7 +7,6 @@ fieldLayouts:
             autocapitalize: true
             autocomplete: false
             autocorrect: true
-            autofocus: false
             class: null
             disabled: false
             id: null
@@ -83,6 +82,42 @@ fieldLayouts:
             heading: 'Column Callout'
             type: craft\fieldlayoutelements\Heading
           -
+            fieldUid: 298bf70b-dac4-4d9b-b82d-37619a9987ff
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: c6f90bd2-e727-4c7c-a2d5-cb05c4f02554
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 4be28c1f-14a6-4f36-8b1e-83958c3bc21a
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: a4e48a64-68fd-4d5c-9ce1-ef2e1108b705
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
             fieldUid: a52b0580-1dfe-4d5e-be7a-9f958fb4d8ed
             instructions: null
             label: null
@@ -100,6 +135,18 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 50
+          -
+            heading: 'Bottom Marquee'
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: 652a4e8a-c3ed-4da3-999e-08b1e67e95f7
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 handle: homepage
