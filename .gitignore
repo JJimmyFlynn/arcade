@@ -3,4 +3,7 @@
 /vendor
 /node_modules
 /web/dist
+/web/images
+/web/imager
+/web/cache
 .DS_Store

@@ -7,8 +7,9 @@ import './modules/team-slider.js'
 
 const elMenuToggle = document.querySelector('.js-menu-toggle')
 
-elMenuToggle.addEventListener('click', () => {
+elMenuToggle.addEventListener('click', (e) => {
   const navState = document.body.dataset.navState
+  e.preventDefault()
 
   if (navState === 'closed') {
     document.body.dataset.navState = 'open'

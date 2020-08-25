@@ -10,8 +10,8 @@
 
 .site-footer__inner {
   display: grid;
-  grid-template: 1fr 1fr 1fr / 1fr;
-  grid-gap: 1rem;
+  grid-template: auto auto 1fr / 1fr;
+  grid-gap: 2rem;
   justify-items: center;
 }
 

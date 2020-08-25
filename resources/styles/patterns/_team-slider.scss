@@ -53,6 +53,22 @@
 /* Medium Up
 /**********************************************************************/
 @include breakpoint($medium--up) {
+  .team-slider {
+    transition: opacity 0.5s linear;
+
+    &:hover &__item {
+      opacity: 0.5;
+    }
+  }
+
+  .team-slider .team-slider__item {
+    transition: opacity 0.2s linear;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
   .team-slider__controls {
     display: none;
   }

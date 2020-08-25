@@ -3,13 +3,29 @@
 {% block content %}
   {% include "_partials/column-hero.twig" %}
   {% include "_partials/marquee.twig" with {
-    copy: "The show must go on"
+    copy: entry.homeTopMarqueeText
   } %}
   <section class="column-callout">
     <div class="column-cta">
       <a href="#0" class="column-cta__inner">
         <figure class="image">
-          <img data-src="/media/images/the-loft-sando.jpg" class="u-fit-cover lazyload" alt="" />
+          {% set transformedImages =
+            craft.imagerx.transformImage(entry.homeCalloutImageLeft.one(), "columnHeroImage")
+          %}
+          <picture>
+            {% if craft.imager.serverSupportsWebp() %}
+              {% set transformedImagesWebp =
+                craft.imagerx.transformImage(entry.homeCalloutImageLeft.one(), "columnHeroImageWebp")
+              %}
+            {% endif %}
+            <source data-srcset="{{ craft.imagerx.srcset(transformedImagesWebp) }}"
+              data-sizes="auto"
+              type="image/webp" />
+            <img data-srcset="{{ craft.imagerx.srcset(transformedImages) }}"
+              data-sizes="auto"
+              class="u-fit-cover lazyload"
+              alt="" />
+          </picture>
         </figure>
         <div class="column-cta__content">
           <h2 class="column-cta__title | js-animate">
@@ -26,7 +42,23 @@
     <div class="column-cta">
       <a href="#0" class="column-cta__inner">
         <figure class="image">
-          <img data-src="/media/images/arcade-drinks.jpg" class="u-fit-cover lazyload" alt="" />
+          {% set transformedImages =
+            craft.imagerx.transformImage(entry.homeCalloutImageRight.one(), "columnHeroImage")
+          %}
+          <picture>
+            {% if craft.imager.serverSupportsWebp() %}
+              {% set transformedImagesWebp =
+                craft.imagerx.transformImage(entry.homeCalloutImageRight.one(), "columnHeroImageWebp")
+              %}
+            {% endif %}
+            <source data-srcset="{{ craft.imagerx.srcset(transformedImagesWebp) }}"
+              data-sizes="auto"
+              type="image/webp" />
+            <img data-srcset="{{ craft.imagerx.srcset(transformedImages) }}"
+              data-sizes="auto"
+              class="u-fit-cover lazyload"
+              alt="" />
+          </picture>
         </figure>
         <div class="column-cta__content">
           <h2 class="column-cta__title | js-animate">

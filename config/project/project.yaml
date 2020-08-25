@@ -1,4 +1,4 @@
-dateModified: 1598221681
+dateModified: 1598331744
 email:
   fromEmail: jjimmyflynn@gmail.com
   fromName: 'Arcade Theatres'
@@ -102,6 +102,10 @@ plugins:
       refreshCacheWhenElementSavedUnchanged: false
       sendPoweredByHeader: true
       warmCacheAutomatically: '1'
+  imager-x:
+    edition: pro
+    enabled: true
+    schemaVersion: 3.0.0
   twigpack:
     edition: standard
     enabled: true

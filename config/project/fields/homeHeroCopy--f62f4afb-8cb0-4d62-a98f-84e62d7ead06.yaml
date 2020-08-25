@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: d59c117a-32c7-4afd-b3ab-d74f6ee1ba1f
+handle: homeHeroCopy
+instructions: ''
+name: 'Hero Copy'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
