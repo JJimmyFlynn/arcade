@@ -1,9 +1,9 @@
 {
   "require": {
-    "craftcms/cms": "3.5.5",
+    "craftcms/cms": "3.5.6",
     "nystudio107/craft-twigpack": "1.2.5",
     "putyourlightson/craft-blitz": "3.6.7",
-    "spacecatninja/imager-x": "v3.0.10",
+    "spacecatninja/imager-x": "v3.1.4",
     "vlucas/phpdotenv": "^3.4.0"
   },
   "require-dev": {

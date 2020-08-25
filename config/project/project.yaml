@@ -1,4 +1,4 @@
-dateModified: 1598331744
+dateModified: 1598396966
 email:
   fromEmail: jjimmyflynn@gmail.com
   fromName: 'Arcade Theatres'
@@ -114,7 +114,7 @@ system:
   edition: solo
   live: true
   name: 'Arcade Theatres'
-  schemaVersion: 3.5.12
+  schemaVersion: 3.5.13
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
