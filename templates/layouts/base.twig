@@ -7,12 +7,11 @@
   </head>
 
   <body class="{{ body_class ?? "" }}" data-nav-state="closed">
-    <a href="#mainContent" class="u-visually-hidden">Skip to main Content</a>
-    <a href="#mainNav" class="u-visually-hidden">Skip to main navigation</a>
+    <a href="#mainContent" class="skip-link u-visually-hidden">Skip to main Content</a>
     <div class="js-header-tracker"></div>
     {% block header %}
       {% include "_partials/header.twig" %}
-      {% include "_paritals/overlay-nav.twig" %}
+      {% include "_partials/overlay-nav.twig" %}
     {% endblock %}
 
     <main role="main" id="mainContent" class="main">

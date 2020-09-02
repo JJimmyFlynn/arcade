@@ -1,4 +1,4 @@
-dateModified: 1598398038
+dateModified: 1598808665
 email:
   fromEmail: jjimmyflynn@gmail.com
   fromName: 'Arcade Theatres'
@@ -25,7 +25,7 @@ plugins:
             - ''
       cacheStorageType: putyourlightson\blitz\drivers\storage\FileStorage
       cacheWarmerType: putyourlightson\blitz\drivers\warmers\LocalWarmer
-      cachingEnabled: '1'
+      cachingEnabled: ''
       clearCacheAutomatically: '1'
       customSiteUris:
         -

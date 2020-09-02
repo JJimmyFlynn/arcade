@@ -1,1 +1,15 @@
+%dashed-focus {
+  outline: 2px dashed $color-blue-accent;
+}
 
+a:focus,
+button:focus{
+  @extend %dashed-focus;
+}
+
+.skip-link:focus {
+  @include visually-shown(absolute);
+  z-index: 1000;
+  color: $color-dark-red;
+  background-color: #fff;
+}

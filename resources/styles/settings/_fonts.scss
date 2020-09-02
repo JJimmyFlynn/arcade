@@ -4,13 +4,15 @@
 @font-face {
   font-family: 'Mabry';
   src: url('../../fonts/MabryPro-Regular.woff2') format("woff2");
-  font-weight: 400
+  font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Mabry';
   src: url('../../fonts/MabryPro-Bold.woff2') format("woff2");
-  font-weight: 800
+  font-weight: 800;
+  font-display: swap;
 }
 
 $line-height: 1.55;
